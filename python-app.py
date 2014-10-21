@@ -40,28 +40,6 @@ def auth():
 
     return render_template('success.html')
 
-    #
-    
-#    def login(self, request) :
-#
-#        if not userdata :
-#            flash('Login Failed', 'danger')
-#            return False
-#
-#        if sha256_crypt.verify(request.form.get('password'), userdata.get('password')) :
-#            session_data = {
-#                'email' : userdata.get('email'),
-#                'admin' : userdata.get('admin'),
-#                'id'    : str(userdata.get('_id'))
-#            }
-#            session['userdata'] = session_data
-#            flash('Login Successful', 'success')
-#            return True
-#
-#        flash('Login Failed', 'danger')
-
-# database functions
-
 @app.route('/main')
 def main():
     return render_template('main.html')
