@@ -1,0 +1,2695 @@
+html, body {
+ height : 100%;
+ width : 100%;
+ background : #2D2D2D;
+ min-height : 680px;
+ min-width : 1200px; 
+}
+
+/* ---- */
+
+.private_header {
+ position : relative; 
+ width : 100%; 
+ height : 56px; 
+ display : block; 
+ background : #F9F9F9; 
+}
+
+.private_header > * {
+ display : block;
+ height : 50px; 
+}
+
+.private_header .logo {
+ float : left; 
+}
+
+.private_header .logo img {
+ height : 40px; 
+ margin : 8px 0 0 20px; 
+}
+
+.private_header > .profile {
+ float :right; 
+ margin-right : 20px; 
+ height : 56px;
+ /*background : teal; */
+}
+
+.private_header > .profile .dropdown {
+ display : block; 
+ height : 95px; 
+ min-width : 200px; 
+ background : #1E72BB; 
+ position : absolute; 
+ right : 20px; 
+ top : 56px; 
+ z-index : 50; /* TODO - harmonize z-indexes */
+ font-size : 14px; 
+ /* Drop Shadow nonsense 
+ -moz-box-shadow: 0px 0px 10px #000;
+ -webkit-box-shadow: 0px 0px 10px #000;
+ box-shadow: 0px 0px 10px #000;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#000000')";
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#000000');*/
+}
+
+.private_header > .profile .dropdown > * {
+ height : 28px; 
+ display : block; 
+ width : 170px; 
+ margin : 10px 0 0 10px;
+ padding : 3px 0 0 10px;
+ color : white;
+ font-weight : 600; 
+ font-size : 16px;
+ cursor : pointer;
+ -moz-border-radius : 4px ;
+ -webkit-border-radius : 4px ;
+ border-radius : 4px ;
+ -khtml-border-radius : 4px ;
+}
+
+.private_header > .profile .dropdown > *:hover {
+ background : #155B8A; 
+}
+
+.private_header > .profile .username {
+ display : block;
+ height : 56px;
+ width : 200px; 
+}
+
+.private_header > .profile .username > * {
+ display : block;
+ float : right;
+ clear : none;
+}
+
+.private_header > .profile .username .label {
+ margin-top : 12px;
+ font-size : 18px;
+ width : 65%;
+ height : 30px;
+ text-align : right; 
+ color : #414042; 
+ overflow : hidden;
+}
+
+.private_header > .profile .username .mascot {
+}
+
+.private_header > .profile .username .arrow {
+ background : url('../../../images/dropdown_arrow.png');
+ width : 26px;
+ height : 14px;
+ margin : 20px 10px 0 17px; 
+}
+
+.private_header .center {
+ margin:auto; 
+ width:500px; 
+}
+
+/* ---- */
+
+.panel_wrapper {
+ float:left;
+ height:100%;
+ /*background:blue;*/
+}
+
+.panel_wrapper_array {
+ float:left;
+ height:100%;
+ /*background:green;*/
+}
+
+.panel_array_mask {
+ /*overflow:hidden; - FUCKED THINGS UP IN CHROME */ 
+ overflow : hidden; 
+ min-height : 650px; 
+ width : 100%;
+ height : 84%;
+ position : relative;
+ /*background:orange;*/
+}
+
+/* -- */
+
+.panel_footer {
+ position:absolute;
+ /*bottom : 0px;*/
+ top : 660px;
+ bottom : 0px;
+ width : 100%;
+ /*height : 60px;*/
+ background : #F9F9F9; 
+ min-height : 50px; 
+}
+
+/* ---- */
+
+.panel_icons {
+
+ margin : 0 auto; 
+ height : 56px;
+ width : 560px;
+}
+
+.panel_icons ul {
+ list-style-type : none;
+ padding : 0px;
+ margin : 0px;
+}
+
+.panel_icons ul li {
+ display : block;
+ float : left;
+ clear : none;
+ background : teal;
+ height : 56px;
+ width : 60px;
+ margin : 0 5px;
+ cursor : pointer;
+ background-image : url('../../../images/navigation_icons_sprite.png'); /* weird, huh? */
+     }
+
+.panel_icons ul li.panel_icon_1 { background-position : 0px 0px }
+.panel_icons ul li.panel_icon_2 { background-position : -60px 0px }
+.panel_icons ul li.panel_icon_3 { background-position : -120px 0px }
+.panel_icons ul li.panel_icon_4 { background-position : -180px 0px }
+.panel_icons ul li.panel_icon_5 { background-position : -240px 0px }
+.panel_icons ul li.panel_icon_6 { background-position : -300px 0px }
+.panel_icons ul li.panel_icon_7 { background-position : -360px 0px }
+.panel_icons ul li.panel_icon_8 { background-position : -420px 0px }
+.panel_icons ul li.panel_icon_9 { background-position : -480px 0px }
+
+.panel_icons ul li.panel_icon_1:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_2:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_3:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_4:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_5:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_6:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_7:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_8:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_9:hover { opacity : 0.65; filter:alpha(opacity=65) }
+
+.panel_icons ul li.panel_icon_1.alert { background-position : 0px -56px }
+.panel_icons ul li.panel_icon_2.alert { background-position : -60px -56px }
+.panel_icons ul li.panel_icon_3.alert { background-position : -120px -56px }
+.panel_icons ul li.panel_icon_4.alert { background-position : -180px -56px }
+.panel_icons ul li.panel_icon_5.alert { background-position : -240px -56px }
+.panel_icons ul li.panel_icon_6.alert { background-position : -300px -56px }
+.panel_icons ul li.panel_icon_7.alert { background-position : -360px -56px }
+.panel_icons ul li.panel_icon_8.alert { background-position : -420px -56px }
+.panel_icons ul li.panel_icon_9.alert { background-position : -480px -56px }
+
+.panel_icons ul li.panel_icon_1.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_2.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_3.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_4.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_5.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_6.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_7.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_8.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+.panel_icons ul li.panel_icon_9.alert:hover { opacity : 0.65; filter:alpha(opacity=65) }
+
+.panel_icons ul li.panel_icon_1.selected { background-position : 0px -112px }
+.panel_icons ul li.panel_icon_2.selected { background-position : -60px -112px }
+.panel_icons ul li.panel_icon_3.selected { background-position : -120px -112px }
+.panel_icons ul li.panel_icon_4.selected { background-position : -180px -112px }
+.panel_icons ul li.panel_icon_5.selected { background-position : -240px -112px }
+.panel_icons ul li.panel_icon_6.selected { background-position : -300px -112px }
+.panel_icons ul li.panel_icon_7.selected { background-position : -360px -112px }
+.panel_icons ul li.panel_icon_8.selected { background-position : -420px -112px }
+.panel_icons ul li.panel_icon_9.selected { background-position : -480px -112px }
+
+.panel_icons ul li.panel_icon_1.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_2.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_3.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_4.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_5.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_6.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_7.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_8.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+.panel_icons ul li.panel_icon_9.selected:hover { opacity : 1.00; filter:alpha(opacity=100) }
+
+/**/ 
+
+.navigation_arrow img {
+ clear : none;
+ display : block;
+ height : 140px;
+ width : 80px;
+ margin-top : 240px;
+ background : teal;
+ cursor : pointer;
+ position : fixed; 
+}
+.navigation_arrow img:hover {
+ opacity : 0.70; filter:alpha(opacity=70);
+}
+
+.navigation_arrow.left {
+ float : left;
+ margin-left : 40px;
+}
+
+.navigation_arrow.right {
+ float : right;
+ margin-right : 120px;
+}
+
+/**/
+
+.small_arrows {
+ /* container for small_arrow groups*/
+ width : 100%; 
+ float : left; 
+ clear : none; 
+}
+
+.small_arrow {
+ height : 24px;
+ width : 24px; 
+ background-image : url('../../../images/arrow_grid.png'); 
+ float : left; 
+ clear : none; 
+}
+
+.small_arrow.top_left { background-position : 0px 0px }
+.small_arrow.top { background-position : -24px 0px }
+.small_arrow.top_right { background-position : -48px 0px }
+.small_arrow.left { background-position : 0px -24px }
+.small_arrow.middle { background-position : -24px -24px }
+.small_arrow.right { background-position : -48px -24px }
+.small_arrow.bottom_left { background-position : 0px -48px }
+.small_arrow.bottom { background-position : -24px -48px }
+.small_arrow.bottom_right { background-position : -48px -48px }
+
+/* ---- */
+
+
+.panel {
+ /* DEFAULT -- Applied to all preview panels -- */
+ display : block; 
+ height : 540px;
+ width : 840px; 
+ margin : 30px auto;
+ background : #F9F9F9; 
+ overflow : visible; /*auto;*/
+ padding : 0;
+ position : relative;
+
+ /**/
+ -moz-border-radius: 20px ;
+ -webkit-border-radius: 20px ;
+ border-radius: 20px ;
+ -khtml-border-radius: 20px ;
+
+ /* Drop Shadow nonsense */
+ -moz-box-shadow: 0px 0px 10px #000;
+ -webkit-box-shadow: 0px 0px 10px #000;
+ box-shadow: 0px 0px 10px #000;
+ /* For IE 8 */
+ -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#000000')";
+ /* For IE 5.5 - 7 */
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#000000');
+
+}
+
+/* --- */
+
+.panel h1 {
+ color : #1E72BB;
+ color : #2175BB; 
+ font-size : 18px;
+ margin : 0;
+ padding : 0;
+ float : left;
+ height : 22px;
+ font-weight : 400; 
+}
+
+.panel h2 {
+ color : #1E72BB;
+ font-size : 16px;
+ margin : 0;
+ padding : 0;
+ float : left;
+ height : 22px;
+ font-weight : 400; 
+}
+
+.panel h3 {
+ color : #58595B;
+ font-size : 14px;
+ margin : 0;
+ padding : 0;
+ float : left;
+ height : 22px;
+}
+
+.panel hr {
+ width : 240px;
+ opacity : 0.30; filter:alpha(opacity=30);
+ height : 1px;
+ float : left;
+}
+
+.panel input[type="text"] , 
+.panel input[type="password"] {
+ border : none;
+ padding-left : 10px;
+ height : 22px;
+ margin : 3px 0 5px 0;
+ width : 230px;
+ background : #E6E7E8;
+ color : #414042;
+ border-radius : 4px;
+ -moz-border-radius : 4px;
+ -webkit-border-radius : 4px;
+}
+
+.panel .time_input {
+ width : 80px;
+ height : 22px; 
+ display : block; 
+ float : left;
+ clear: : none;
+ /*background : green;*/
+}
+
+.panel .time_input input[type="text"] {
+ width : 64px;
+}
+
+.panel .date_input {
+ width : 140px;
+ height : 22px; 
+ margin-left : 10px; 
+ display : block; 
+ float : left;
+ clear: : none;
+ /*background : teal;*/
+}
+
+.panel .date_input input[type="text"] {
+ width: 140px; 
+}
+
+/* --- */
+
+.panel .orange_text {
+ color : #F15A29; 
+ font-weight : 600;
+}
+
+.panel .purple_text {
+ color : #662D91; 
+ font-weight : 600;
+}
+
+/* --- */
+
+.panel .header {
+ height : 40px;
+ display : block;
+ width : 100%;
+ text-align : center;
+ overflow : hidden; /* helps with animation effects */ 
+ /*background:#1C75BB;*/
+}
+
+.panel .header .header_label {
+ width : 50%;
+ color : #2175BB; 
+ font-size : 18px; 
+ float : left; 
+ clear : none; 
+ display : block; 
+ margin : 6px 0 0 10px; 
+ text-align : left;
+ /* TODO - Optimize the CSS and apply this | .header || .header_label | model throughout the style sheet */ 
+}
+
+.panel .header.spacing_header {
+ height : 64px; 
+}
+
+.panel .header.main {
+ background : none repeat scroll 0 0 #1E72BB;
+ /*margin : -30px 0 0 300px;*/
+ margin : 0px; 
+ position : absolute;
+ text-align : center;
+ color : white; 
+ font-weight : 400;
+ width : 100%;
+ height : 50px; 
+
+ /* Drop Shadow nonsense */
+ -moz-box-shadow : 0px 0px 2px #2D2D2D;
+ -webkit-box-shadow : 0px 0px 2px #2D2D2D;
+ box-shadow : 0px 0px 2px #2D2D2D;
+ /* For IE 8 */
+ -ms-filter : "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color='#2D2D2D')";
+ /* For IE 5.5 - 7 */
+ filter : progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color='#2D2D2D');
+
+ /* Rounded corners */
+ -moz-border-radius : 20px 20px 0px 0px;
+ -webkit-border-radius : 20px 20px 0px 0px;
+ border-radius : 20px 20px 0px 0px;
+ -khtml-border-radius : 20px 20px 0px 0px;
+
+}
+
+/* -- */ 
+
+.panel .header.main > * {
+ clear : none; 
+}
+
+.panel .header.main .title {
+ font-size : 24px; 
+ margin : 10px 0 0 35px; 
+ float : left; 
+}
+
+.panel .header.main .panel_header_divider {
+ height : 100%; 
+ width : 12px; 
+ margin : 0; 
+ display : block; 
+ float : right; 
+ background : url('../../../images/panel_header_divider.png'); 
+}
+
+.panel .header.main .button {
+ width : 150px;
+ height : 100%; 
+ float : right; 
+ background : none; 
+ text-align : center; 
+ font-size : 15px; 
+ margin-top : 0; 
+ padding-top : 13px; 
+ cursor : pointer; 
+}
+.panel .header.main .button:hover {
+ background : #2586C8; 
+}
+
+.panel .header.main .button.corner {
+ /* Rounded corners - Fixes a stupid chrome bug where children don't inherit rounded borders from parents */
+ -moz-border-radius : 0px 20px 0px 0px;
+ -webkit-border-radius : 0px 20px 0px 0px;
+ border-radius : 0px 20px 0px 0px;
+ -khtml-border-radius : 0px 20px 0px 0px;
+}
+
+/* -- */
+
+.panel .left_panel , 
+.panel .mid_panel ,
+.panel .right_panel ,
+.panel .far_right_panel { 
+ position : relative; 
+}
+
+/**/
+
+.panel .tab {
+ float : left; 
+ clear : none;
+ margin-right : 33px;
+ cursor : pointer; 
+ font-size : 18px;
+ color : #808285;
+}
+
+.panel .tab.alert {
+ color : #F15A29;
+}
+
+.panel .tab.selected {
+ /*font-weight : 600; */
+ color : #1E72BB;
+}
+
+/* ---- */
+
+.preview_list_element {
+ display : block; 
+ float : left; 
+ clear : left; 
+ min-height : 24px; /*30*/
+ width : 100%; 
+ /*margin-top : 2px; /*4*/
+ margin-bottom : 2px; 
+ background : #E6E7E8; /*#1E75BB; */
+ color : #414042;
+ font-size : 12px;
+ font-weight : 600; 
+ cursor : pointer; 
+}
+.preview_list_element:hover {
+ background : #D1D3D4;
+}
+
+.preview_list_element.selected {
+ background : #1E72BB; 
+ color : white; 
+}
+.preview_list_element.selected:hover {
+ background : #1E72BB; /*remains unchanged*/
+}
+
+/*used for contacts in lists*/
+.preview_list_element.accept_status_0 {
+ background : orange;
+}
+.preview_list_element.accept_status_1 {
+ background : green;
+}
+.preview_list_element.accept_status_2 {
+ background : red;
+}
+
+/*used for events */
+.preview_list_element.pending_user {
+ background : #F7941E; 
+} /*cCCC*/ 
+.preview_list_element.pending_user:hover {
+ background : #E88623;
+}
+
+/* used for tasks */ 
+.preview_list_element.completed { 
+ /*background :gray; */
+ text-decoration : line-through;
+}
+
+/**/
+.preview_list_element.unviewed {
+ background : pink; 
+} 
+.preview_list_element.unviewed:hover {
+ background : fuchsia;
+}
+
+.preview_list_element .description {
+ float : left;
+ font-size : 13px;
+ font-weight : 600;
+ margin : 2px 0 4px 8px; 
+ width : 80%;
+}
+
+.preview_list_element.completed .description {
+ color : #BFC0C1; 
+ text-decoration : line-through;
+}
+
+
+
+
+/* --------------- */
+
+.inform {
+ /*information panels scattered throughout the app that notify the user of stuff */
+ background : #1E72BB; 
+ color : white; 
+ font-weight : 600; 
+ font-size : 12px; 
+ text-align : center; 
+ padding : 10px 0; 
+ cursor : pointer; 
+}
+
+/* --------------- */
+
+.info_button {
+ display : block; 
+ height : 120px;
+ width : 270px; 
+ float : left; 
+ margin : 0 0 15px 0; 
+ border : 1px solid #D1D3D4; 
+ cursor : pointer; 
+ -moz-border-radius : 10px;
+ -webkit-border-radius : 10px;
+ border-radius : 10px; 
+ -khtml-border-radius : 10px;
+}
+.info_button:hover {
+ background : #E6E7E8; 
+}
+
+.info_button h2 {
+ padding : 10px 0 0 15px; 
+ float : left; 
+ font-weight : 600; 
+ font-size : 15px; 
+}
+
+.info_button .description {
+ font-size : 11px;
+ padding : 10px 15px 15px 15px; 
+ float : left; 
+}
+
+.info_button .icon {
+ height : 20px; 
+ width : 40px; 
+ float : right; 
+ clear : none; 
+ /*background : #D1D3D4; */
+ overflow : hidden; 
+ margin : 10px 20px 0 0 ; 
+}
+.info_button.new_event .icon { background : url('../../../images/info_button_events.png'); }
+.info_button.time_match .icon { background : url('../../../images/info_button_time_match.png'); }
+.info_button.tips_tricks .icon { background : url('../../../images/info_button_tips.png'); }
+
+
+/* --------------- */
+
+.load_overlay {
+
+ position : absolute; 
+ top : 0; 
+ bottom : 0; 
+ left : 0; 
+ right : 0; 
+ display : block; 
+ opacity : 0.80; filter:alpha(opacity=80);
+
+ background-color : #F9F9F9;
+ background-image : url('../../../images/loader_large.gif');
+ background-repeat : no-repeat;
+
+ background-position : center; 
+
+ /*display : none; */
+
+}
+
+.load_overlay .spinner {
+ width : 80px
+}
+
+
+
+
+
+
+/* --------------- */
+
+.panel .contact_container , 
+.panel .task_container , 
+.panel .note_container {
+ display : block; 
+ width : 200px; 
+ margin-left : 19px; 
+ float : left; 
+ max-height : 80px; 
+ overflow : auto; 
+ /*background : tan; */
+}
+
+
+
+/* --------------- */
+
+.float_spacer {
+ display:block;
+ float:left;
+ clear:both;
+ width:100%; 
+}
+
+.float_spacer._5 { height: 5px; }
+.float_spacer._10 { height: 10px; }
+.float_spacer._15 { height: 15px; }
+.float_spacer._20 { height: 20px; }
+.float_spacer._30 { height: 30px; }
+
+/* --------------- */
+
+.horizontal_divider {
+ display : block;
+ height : 6px;
+ width : 240px; 
+ background : black; 
+ background-image : url('../../../images/horizontal_divider_sprite.png'); 
+ float : left; 
+ clear : none; 
+}
+
+.horizontal_divicer.down { background-position : 0 0 }
+.horizontal_divider.up { background-position : 0 -6px; }
+
+.vertical_divider {
+ display : block;
+ height : 480px;
+ width : 6px; 
+ background : black; 
+ background-image : url('../../../images/vertical_divider_sprite.png'); 
+ float : left; 
+ clear : none; 
+ margin-top : -10px; /* COMPENSATE FOR THE SPACING HEADER */
+}
+
+.vertical_divicer.left { background-position : 0 0 }
+.vertical_divider.right { background-position : -6px 0; }
+
+/* --------------- */
+
+.checkbox {
+ background-image : url('../../../images/checkbox.png'); 
+ display : block;
+ height : 16px;
+ width : 16px;
+ margin : 4px 0 0 8px;
+ float :left;
+}
+
+.checkbox.checked {
+ background-position : -16px 0; 
+}
+
+/* -------------- */
+/* TODO : 
+    Refactor some of this - it may break things in the future due to shitty naming!
+
+    */
+
+.panel .edit_button, 
+.panel .save, 
+.panel .create {
+ display : block;
+ height : 24px;
+ width : 42px;
+ float : right;
+ clear : none;
+ margin : -2px 23px 0 0;
+ cursor : pointer;
+}
+.panel .edit_button:hover {
+opacity : 0.80; filter:alpha(opacity=80);
+}
+
+/* TODO - photoshop the rest of these */
+/* ALSO - rename this to something other than "edit_button" since it has many uses */
+
+.panel .delete, 
+.panel .cancel { background : url('../../../images/edit_button_delete.png' ); }
+.panel .add_contact { background : url('../../../images/edit_button_contact.png'); }
+.panel .add_task { background : url('../../../images/edit_button_task.png' ); }
+.panel .add_note { background : url('../../../images/edit_button_note.png' ); }
+.panel .go { background : url('../../../images/edit_button_go.png' ); }
+
+.panel .save { 
+ background : url('../../../images/edit_button_save.png' ); 
+ width:66px;
+ margin: 0 25px 0 0;
+}
+
+.panel .edit_button.yes , 
+.panel .edit_button.no {
+ width : 66px; 
+ margin : 0 25px 0 0;
+}
+
+.panel .edit_button.yes { background : url('../../../images/edit_button_yes.png' ); }
+.panel .edit_button.no { background : url('../../../images/edit_button_no.png' ); }
+
+/**/
+
+/*
+.panel .event_details .contact_container , 
+.panel .event_details .task_container , 
+.panel .event_details .note_container {
+ display : block; 
+ width : 200px; 
+ margin-left : 19px; 
+ max-height : 80px; 
+ overflow : auto; 
+}
+*/
+
+/* ----------------- */ 
+
+
+
+
+
+
+
+
+
+/* -- PREVIEW PANEL >> INTRO / SPLASH PAGE -- */
+.panel.intro {
+ /*override*/
+ /*background:tan;*/
+ width : 820px; 
+}
+
+.panel.intro .header.main {
+ /* overrides */ 
+}
+
+.panel.intro .small_arrow {
+ margin-top : 20px; 
+}
+.panel.intro .small_arrow.top_left { 
+ margin-left : 50px; 
+}
+.panel.intro .small_arrow.top { 
+ float : none; 
+ margin : 20px auto 0 auto; 
+}
+.panel.intro .small_arrow.top_right { 
+ margin-right : 50px; 
+ float : right; 
+}
+
+/**/
+
+.panel.intro .help_blurbs {
+ width : 100%; 
+ float : left; 
+ clear : left; 
+}
+.panel.intro .help_blurb {
+ float : left; 
+ clear : none; 
+ width : 200px; 
+ height : 50px; 
+ font-size : 13px; 
+ /*background : teal; */
+}
+.panel.intro .help_blurb.left {
+ margin-left : 50px; 
+}
+.panel.intro .help_blurb.middle {
+ float : none; 
+ margin : auto; 
+ width : 300px;
+ text-align : center; 
+}
+.panel.intro .help_blurb.right {
+ float : right; 
+ margin-right : 50px; 
+ text-align : right; 
+}
+.panel.intro .help_blurb.bottom {
+ float : none; 
+ margin : auto; 
+ width : 400px; 
+ text-align : center; 
+}
+
+/**/
+
+.panel.intro hr {
+ width : 80%; 
+ margin : 20px 10% 30px 10%; 
+}
+
+/**/
+
+.panel.intro .speech_sector {
+ width : 100%; 
+ float : left; 
+ clear : left; 
+ height : 240px; 
+}
+
+.panel.intro .cue {
+ height : 150px; 
+ width : 240px; 
+ float : left; 
+ clear : none; 
+}
+
+.panel.intro .speech_bubble {
+
+ background : none repeat scroll 0 0 white;
+ border : 1px solid #1E72BB;
+ clear : none;
+ float : left;
+ height : 150px;
+ margin-left : 10px;
+ padding : 20px;
+ width : 190px;
+
+ -moz-border-radius : 20px;
+ -webkit-border-radius : 20px;
+ border-radius : 20px;
+ -khtml-border-radius : 20px;
+
+}
+
+.panel.intro .speech_bubble.left {
+ margin-left : 42px; 
+}
+.panel.intro .speech_bubble.right {
+ width : 230px; 
+}
+
+/**/
+
+.panel.intro .speech_bubble h1 {
+ margin-top : -5px; 
+}
+
+.panel.intro .speech_bubble .contents {
+ overflow : auto;
+ height : 150px; 
+}
+
+.panel.intro .cue {
+ margin : 85px -20px 0 0; 
+}
+
+/**/
+
+.panel.intro .speech_bubble .actions_container {
+ height : 120px; 
+ width : 230px; 
+ float : left; 
+ clear : none; 
+ margin : 10px 0px; 
+ overflow : auto; 
+ /*background : pink;*/
+}
+
+.panel.intro .speech_bubble .actions_container ul { 
+ /*display:inline; */
+ margin : 0; 
+ padding : 0; 
+}
+
+.panel.intro .speech_bubble .actions_container ul li {
+ list-style : none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- PREVIEW PANEL >> PROFILE -- */
+.panel.profile {
+ /*override*/
+ /*background:tan;*/
+ width : 610px; 
+}
+
+.panel.profile .header.main {
+ /* overrides */ 
+
+}
+
+.panel.profile .header.spacing_header {
+ height : 70px; 
+}
+
+.panel.profile .left_panel {
+ width : 285px;
+ float : left;
+ clear : none;
+ margin-left : 30px;
+}
+
+.panel.profile .right_panel {
+ width : 245px;
+ float : left;
+ clear : none;
+ height : 90%;
+ margin-left : 35px; 
+ /*background : pink;*/
+}
+
+/* --- */
+
+.panel.profile .user_info {
+ width : 260px;
+ height : 400px; 
+ float : left; 
+ margin : 10px 0 0 0;
+ overflow : auto; 
+ /*background : green; */
+}
+
+.panel.profile .user_info hr {
+ width : 210px;
+}
+
+.panel.profile input[type="text"] , 
+.panel.profile input[type="password"] {
+ width : 210px;
+}
+
+.panel.profile .user_photo {
+ height : 220px; 
+ width : 220px; 
+ display : block; 
+ float : left; 
+ /*background : blue; */
+}
+
+/*
+.panel.profile .left_panel .header,
+.panel.profile .right_panel .header {
+ background:#888;
+ height:40px;
+ display:block;
+ width:100%;
+ text-align:center;
+}
+*/
+
+
+
+
+
+
+
+/* -- PREVIEW PANEL >> CALENDAR -- */
+
+.panel.calendar {
+ /*override*/
+ width:1100px;
+ position:relative;
+ background : #F9F9F9; 
+ /*overflow: hidden; */
+ overflow : visible; 
+}
+
+/* the three main systems */
+.panel.calendar .display_system {}
+
+.panel.calendar .new_event_system { 
+ position : absolute; 
+ display : none;
+ width : 100%; 
+}
+
+.panel.calendar .time_match_system { 
+ display:none; 
+}
+
+.panel.calendar .left_panel {
+ width : 295px;
+ height : 100%;
+ float : left;
+ clear : none;
+}
+.panel.calendar .mid_panel {
+ width : 425px;
+ float : left;
+ clear : none;
+ margin-left : 20px;
+ height : 100%;
+}
+.panel.calendar .right_panel {
+ width : 300px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 25px; 
+}
+.panel.calendar .far_right_panel {
+ width : 300px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 35px;
+}
+
+
+.panel.calendar .display_system .right_panel {
+ /* start invisible */
+ display : none; 
+}
+.panel.calendar .display_system .far_right_panel {
+ /* visible at start - by default */
+ display : block;
+}
+
+
+.panel.calendar .new_event_system .left_panel {
+ float : left;
+ display : block; 
+ clear : none; 
+ background : #F9F9F9; 
+ width : 740px; 
+ height : 450px; 
+ opacity : 0.65; filter:alpha(opacity=65);
+}
+.panel.calendar .new_event_system .mid_panel {
+ width : 0px; 
+ display : none; 
+}
+.panel.calendar .new_event_system .right_panel {
+ float : right; 
+ margin : 0 15px 0 0; 
+ clear : none; 
+ visibility : visible; 
+}
+
+.panel.calendar .time_match_system .left_panel {
+ width : 275px; 
+ margin-left : 37px; 
+}
+.panel.calendar .time_match_system .mid_panel {
+ width : 265px; 
+ margin-left : 30px; 
+}
+.panel.calendar .time_match_system .right_panel {
+ margin-left : 35px; 
+ width : 240px; 
+ height : 440px; 
+}
+
+/* -------- */
+
+/* We can toggle headers if needed */
+.panel.calendar .header.main.cancel {
+ /* invisible by default */
+ display : none; 
+}
+
+/* -------- */
+
+.panel.calendar .header {
+ /* override styles */
+}
+
+.panel.calendar .header .header_label{
+ width : 40%;
+}
+
+.panel.calendar .display_system .far_right_panel .header_label {
+ margin-left : 0; 
+ width : 100%; 
+}
+
+.panel.calendar .time_match_system .header_label {
+ margin-left : 0; 
+ width : 100%; 
+}
+.panel.calendar .time_match_system .mid_panel .header_label {
+ /*width : 50%; */
+}
+
+.panel.calendar .time_match_system .right_panel .load_overlay {
+ /* has to start out as invisible */
+ display : none; 
+}
+
+/* -------- */
+
+.panel.calendar .day_view_time_map {
+ /*overflow:auto;*/
+ background:teal;
+}
+
+/* -------- */
+
+.panel.calendar .event_list_header {
+ display : block;
+ height : 30px;
+ margin : 20px 0 0 34px;
+ width : 260px;
+ float : left; 
+}
+
+.panel.calendar .event_list_header .tab {
+ margin-right : 33px;
+}
+
+.panel.calendar .event_list_container {
+ /* accomodate the load_overlay */
+ position : relative; 
+ float : left; 
+}
+
+.panel.calendar .event_list {
+ display : block;
+ height : 160px;
+ margin-left : 36px;
+ overflow : auto;
+ width : 222px;
+ float : left; 
+ background : #F1F1F1; 
+}
+
+/* initial states */
+.panel.calendar .event_list.month, 
+.panel.calendar .event_list.pending {
+ display : none; 
+}
+
+/* -------- */
+
+.calendar_month_grid {
+ display :block; 
+ padding-bottom :4px; 
+ width :230px;
+ margin : 0 0 0 30px; 
+ float :left;
+}
+
+.panel.calendar .header.month_header {
+ background : none; 
+ width: 230px; 
+ margin-left : 30px; 
+}
+
+.header.month_header .month_view_next_button , 
+.header.month_header .month_view_prev_button , 
+.header.day_header .day_view_next_button , 
+.header.day_header .day_view_prev_button {
+ display : block; 
+ width : 16px;
+ height : 16px;
+ overflow : hidden; 
+ float : right;
+ display : block;
+ clear : none;
+ margin-top : 10px; 
+ cursor : pointer;
+ background : url('../../../images/arrows_small.png');
+}
+
+.header.month_header .month_view_next_button:hover , 
+.header.month_header .month_view_prev_button:hover , 
+.header.day_header .day_view_next_button:hover , 
+.header.day_header .day_view_prev_button:hover {
+ opacity : 0.70; filter:alpha(opacity=70); /* < -- For IE8 and earlier */
+}
+
+.header.month_header .month_view_next_button , 
+.header.day_header .day_view_next_button {
+ background-position : 16px 0; 
+}
+.header.month_header .month_view_prev_button , 
+.header.day_header .day_view_prev_button {
+ margin-right : 10px; 
+}
+
+/**/
+
+.header.month_header .month_label, 
+.header.day_header .day_label {
+ width : 70%;
+ color : #2175BB; 
+ font-size : 18px; 
+ float : left; 
+ clear : none; 
+ display : block; 
+ margin : 6px 0 0 10px; 
+ text-align : left;
+}
+
+.header.day_header .day_label {
+ width : 300px;
+}
+
+/* CALENDAR DAYS */
+
+ .panel.calendar .header.day_header {
+    background : none; 
+    width : 395px; 
+ }
+
+/**/
+
+ .calendar_day_block {
+    height: 25px; 
+    width: 30px; 
+    margin-left:2px; 
+    margin-top:2px; 
+    float:left; 
+    clear:none;
+    background:#D2D3D4; 
+    cursor: pointer;
+ }
+ .calendar_day_block:hover {
+    background : #BFC0C1;
+ }
+
+
+ .calendar_day_block.selected {
+    background:#2175BB;
+    color:white;
+ }
+
+ .calendar_day_block p { 
+    text-align : center; 
+    font-size : 14px; 
+    margin-top : 3px;
+    font-weight : 400; 
+ }
+
+ .calendar_day_block.faded { 
+    background : #E6E7E8; 
+    cursor : default; 
+ }
+
+ .calendar_day_block.faded.has_event p { 
+    color : #666; 
+ }
+
+ .calendar_day_block.has_event p { 
+    font-weight : 700;
+ } 
+
+
+
+ .calendar_day_block.available_for_time_match { background:#5C9345; color:white; } /*Has to go before selected day block*/
+
+ .calendar_day_block.selected_day_block { background:#1E75BB; color:white; }
+
+ .calendar_day_grid { margin-left:4px; }
+
+ .calendar_day_name { /* Use this if you need additional formatting for individual day elements */ }
+
+ .calendar_day_names { 
+    float :left; 
+    width :230px; 
+    margin-left :4px; 
+ }
+
+ .calendar_day_names ul { 
+    display:inline; 
+    margin-left:0; 
+    padding-left:0; 
+ }
+
+ .calendar_day_names ul li {
+    list-style : none;
+    width : 30px; 
+    height : 22px; 
+    display : block; 
+    clear : none; 
+    float : left; 
+    margin-left : 2px;
+    text-align : center; 
+    font-size : 14px; 
+    color : #6D6E71;
+    font-weight : 600; 
+ }
+
+/* CALENDAR TIME MAP */
+
+    /* 
+    
+    The time_map is a container for the following : 
+     time_bar_grid
+     time_slice_grid
+     time_value_grid
+    
+    The first two are absolutely positioned, and laid on top of one another
+    When we drag time slices, the time_bar_grid goes on top, to receive the mouse events
+    After release, the time_bar_grid returns to the bottom / disappears
+    
+    */
+
+ .calendar_time_map {
+    width : 392px; 
+    background : #F9F9F9; 
+    float : left;
+    height : 400px;
+    overflow : auto; 
+    position : relative; 
+ }
+
+ /* -- */
+
+ .calendar_time_bar_grid {
+    display : block; 
+    min-height : 30px; 
+    width : 260px;
+    margin-top : 20px;
+    /*float:left; 
+    clear:none;*/
+    position : absolute; 
+    left : 60px; 
+ }
+
+ .calendar_time_bar {
+    height : 20px; /* HAS TO MATCH css_height_of_time_slice IN calendar.js */ 
+    width : 310px; 
+    margin-left : 2px; 
+    margin-top : 2px;
+    float : left; 
+    clear : left;
+    text-align : center; 
+    font-size : 1em; 
+    color : black; 
+    cursor : pointer;
+    background : #E6E7E8; /*#D2D3D4; */
+    opacity : 0.40; filter:alpha(opacity=40); /* < -- For IE8 and earlier */
+ }
+
+ .calendar_time_bar .selected {
+    background:#11AA22;
+    color:white;
+    margin-left : 10px;
+    z-index: 999;
+ }
+
+ .calendar_time_bar p { 
+    margin-top:6px; 
+    font-size:10px;
+ }
+
+ /* - - */
+
+ .calendar_time_slice_grid {
+    display : block; 
+    height : 2120px; 
+    width : 314px; /* ULTRA IMPORTANT!! - THIS HAS TO BE A LITTLE WIDER THAN calendar_time_bar_grid
+     OTHERWISE, MOUSE HANDLERS GET MESSED UP AND TRIGGER UNEXPECTEDLY */
+    margin-top : 20px;
+    position : absolute; 
+    left : 60px; 
+
+    /* DEBUGGING */
+    /*opacity : 0.80; filter:alpha(opacity=80); 
+    background : black */
+    /* DEBUGGING */
+
+    /* TODO - make the height dynamic! - */
+
+ }
+
+ .calendar_time_slice { 
+    min-height : 20px;
+    float : left;
+    width : 50%;
+    clear : none;
+    display : block;
+    opacity : 0.90; filter:alpha(opacity=90); /* < -- For IE8 and earlier */
+    cursor : pointer;
+    position : relative; 
+    margin-left : 5px; 
+    background : #5C5E5F; /*#1E75BB;*/
+    color : white;
+
+    font-weight : 600;
+    font-size : 12px; 
+
+    -moz-border-radius : 4px;
+    -webkit-border-radius : 4px;
+    border-radius : 4px;
+    -khtml-border-radius : 4px;
+ }
+
+ .calendar_time_slice:hover {
+    background : #D1D3D4;
+    color : #414042;
+ }
+
+ .calendar_time_slice.selected {
+    background : #1E72BB; /*#11AA22;*/
+    color : white;
+    margin-left : 20px;
+    z-index : 100;
+ }
+
+ .calendar_time_slice.pending_user {
+    background : #F7941E;
+ }
+
+ .calendar_time_slice.pending_others {
+    background : purple; 
+ }
+
+/**/ /* DDDD */
+
+ .calendar_time_slice .resize {
+    background : #3A3A3A; 
+    position : absolute; 
+    bottom : 0;
+    right : 0; 
+    height : 20px;
+    width : 100px; 
+    text-align : center;
+    color : white;
+    -moz-border-radius : 4px 0px 0 0px;
+    -webkit-border-radius : 4px 0px 0 0px;
+    border-radius : 4px 0px 0 0px; 
+    -khtml-border-radius : 4px 0px 0 0px;
+ }
+
+ .calendar_time_slice.selected .resize {
+    background : #155B8A; 
+ }
+
+ .calendar_time_slice.pending_user .resize {
+    background : #E86D1A; 
+ }
+
+
+ .calendar_time_slice .resize:hover, 
+ .calendar_time_slice.selected .resize:hover {
+    background : white;
+    color : #1E72BB;
+ }
+
+
+ /**/
+
+ .calendar_time_slice .description {
+    /* we don't want the drag + move of time slices to be affected by default text selection behavior */
+    margin : 6px 0 0 9px; 
+
+    height : 80%; 
+    overflow : hidden; 
+
+    /* - text selection prevention - not particularly effective */
+    -webkit-user-select : none;
+    -khtml-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    -o-user-select : none;
+    user-select : none;
+
+ }
+
+ /**/
+
+ .calendar_time_slice .timematch {
+    display : block;
+    float : right;
+    clear : none;
+    height : 20px;
+    width : 40px; 
+    background : gray;
+ }
+ .calendar_time_slice .timematch.status_1 {
+    background : url('../../../images/info_button_time_match.png'); 
+ } 
+
+
+ /* -- */
+
+ .calendar_time_value_grid {
+    display : block; 
+    width : 44px; 
+    min-height : 100px; 
+    float : left;
+    clear : none;
+    margin : 18px 0 0 8px;
+ }
+
+ .calendar_time_value {
+    height : 20px; /* HAS TO MATCH css_height_of_time_slice IN calendar.js */ 
+    width : 44px;
+    margin-left : 2px; 
+    margin-top : 2px;
+    float : left; 
+    clear : left;
+    text-align : right; 
+    font-size : 10px; 
+    color : gray;
+    cursor : pointer;
+    /*background : #F4F5F6;*/
+ }
+
+ .calendar_time_value.hour { /* ASSIGNED BY jQUERY */ 
+    color : black;
+    font-size : 12px;
+ }
+
+ .calendar_time_value p { margin-top:-8px; }
+
+/* -------- 
+RRR
+.panel.calendar .event_list_header {
+ display : block;
+ height : 30px;
+ margin : 20px 0 0 40px;
+ width : 230px;
+ float:left; 
+}
+*/
+
+.panel.calendar .event_details {
+ display : block;
+ height : 400px;
+ margin-left : 10px;
+ overflow : auto;
+ width : 280px;
+ float : left; 
+ /*background : pink;*/ 
+}
+
+/* BBBB */
+
+.panel.calendar .event_details .accept_options {
+ float : left; 
+ height : 140px;
+ display : block; 
+ width : 240px; 
+ /* invisible by default */
+ display : none; 
+ /*background : pink;*/
+}
+
+.panel.calendar .event_details .accept_options p {
+ float : left; 
+ margin : 5px 0 0 0; 
+ padding : 8px 10px 10px 10px; 
+ font-size : 14px; 
+ font-weight : 600; 
+ color : white; 
+ background : orange;
+ text-align : center; 
+ /**/
+ border-radius : 6px;
+ -moz-border-radius : 6px;
+ -webkit-border-radius : 6px;
+}
+
+/**/
+
+.panel.calendar .event_details textarea {
+ border : none;
+ padding : 10px;
+ margin : 3px 0 5px 0;
+ height : 75px;
+ width : 220px;
+ background : #E6E7E8;
+ color : #414042;
+ border-radius : 4px;
+ -moz-border-radius : 4px;
+ -webkit-border-radius : 4px;
+ resize : none; 
+}
+
+/* ZZZ */
+
+.panel.calendar .event_details .edit_button, 
+.panel.calendar .save,
+.panel.calendar .create {
+ display : block;
+ height : 24px;
+ width : 42px;
+ float : right;
+ clear : none;
+ margin : -2px 23px 0 0;
+ cursor : pointer;
+}
+.panel.calendar .event_details .edit_button:hover {
+opacity : 0.80; filter:alpha(opacity=80);
+}
+
+/* TODO - photoshop the rest of these */
+/* ALSO - rename this to something other than "edit_button" since it has many uses */
+
+.panel.calendar .event_details .add_contact { background : url('../../../images/edit_button_contact.png'); }
+.panel.calendar .event_details .add_task { background : url('../../../images/edit_button_task.png' ); }
+.panel.calendar .event_details .add_note { background : url('../../../images/edit_button_note.png' ); }
+.panel.calendar .event_details .delete { background : url('../../../images/edit_button_delete.png' ); }
+
+.panel.calendar .save, 
+.panel.calendar .create { 
+ background : url('../../../images/edit_button_save.png' ); 
+ width:66px;
+ margin: 7px 50px 0 0;
+}
+.panel.calendar .edit_button.cancel { 
+ margin: 7px 10px 0 0;
+}
+
+.panel.calendar .event_details .edit_button.accept_event , 
+.panel.calendar .event_details .edit_button.reject_event {
+ width : 66px; 
+ float : left; 
+ margin : 9px 10px 0 0; 
+}
+
+/* BBBB */
+
+.panel.calendar .event_details .contact_container , 
+.panel.calendar .event_details .task_container , 
+.panel.calendar .event_details .note_container {
+ display : block; 
+ width : 200px; 
+ margin-left : 19px; 
+ max-height : 80px; 
+ overflow : auto; 
+ /*background : tan; */
+}
+
+/* - */
+
+.panel.calendar .time_match_system .time_match_event_details {
+ /*margin-left : 15px; */
+}
+
+.panel.calendar .time_match_system .contact_list ,
+.panel.calendar .time_match_system .selected_contact_list {
+ display : block; 
+ width : 240px; 
+ margin-left : 0px; 
+ max-height : 340px; 
+ overflow : auto; 
+ float : left; 
+}
+.panel.calendar .time_match_system .selected_contact_list {
+ min-height : 40px;
+ max-height : 80px;
+ width : 230px; 
+}
+
+.panel.calendar .time_match_system input[type="text"] {
+ width : 220px;
+}
+
+.panel.calendar .time_match_system .go { 
+ width:42px;
+ margin: 7px 35px 0 0;
+}
+
+.panel.calendar .time_match_system .available_times {
+ margin-left : 0px; 
+ width : 240px; 
+ max-height : 360px; 
+ overflow : auto;
+}
+
+.panel.calendar .time_match_system input[type="button"] {
+ border : none; 
+ cursor : pointer;
+ font-size : 15px;
+ height : 35px;
+ margin-top : 5px;
+ width : 230px;
+ color : white; 
+ background : #1E72BB; 
+ /**/
+ -moz-border-radius : 5px;
+ -webkit-border-radius : 5px;
+ border-radius : 5px;
+ -khtml-border-radius : 5px;
+}
+.panel.calendar .time_match_system input[type="button"]:hover {
+ opacity : 0.70; filter:alpha(opacity=70);
+}
+
+/* -------- */
+
+
+
+
+
+
+/* -- PREVIEW PANEL >> TASKS -- */
+
+.panel.tasks {
+ /*override*/
+ width:950px;
+}
+
+/* the two main systems */
+.panel.tasks .display_system {}
+.panel.tasks .favor_system { display:none; }
+
+/* -- */
+
+.panel.tasks .header.main.default {
+ /*overrides*/
+}
+
+/* We can toggle headers if needed */
+.panel.tasks .header.main.cancel {
+ /* invisible by default */
+ display : none; 
+}
+.panel.tasks .header.main.tutorial {
+ /* invisible by default */
+ display : none; 
+}
+
+/* -- */ 
+
+.panel.tasks .left_panel {
+ width : 290px;
+ height : 420px;
+ float : left;
+ clear : none;
+ position : relative;
+}
+.panel.tasks .mid_panel {
+ width : 310px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 20px;
+}
+.panel.tasks .right_panel {
+ width : 260px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 20px; 
+}
+.panel.tasks .far_right_panel {
+ width : 270px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 23px;
+ /* starts off invisible */
+ display : none;
+}
+.panel.tasks .tutorial_panel {
+ width : 500px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 23px;
+ /* starts off invisible */
+ display : none;
+}
+
+/* -------- */
+
+.panel.tasks .task_list_header {
+ display : block;
+ height : 30px;
+ margin : 0px 0 0 34px;
+ width : 260px;
+ float:left; 
+}
+
+.panel.tasks .task_list_header .tab {
+ margin-right : 20px;
+}
+
+.panel.tasks .task_list_header .tab:nth-child(even) {
+ float : right; 
+}
+
+.panel.tasks .task_list {
+ display : block;
+ height : 370px; /* formerly 200px */
+ margin : 30px 0 0 36px;
+ overflow : auto;
+ width : 222px;
+ float : left; 
+ background : #F1F1F1; 
+}
+
+/* initial states */
+.panel.tasks .task_list.completed_tasks,
+.panel.tasks .task_list.active_favors, 
+.panel.tasks .task_list.completed_favors{
+ display : none; 
+}
+
+/* -------- */
+
+.panel.tasks .task_details {
+ width : 280px; 
+ margin-left : 10px; 
+ overflow : auto; 
+ height : 390px; 
+}
+
+.panel.tasks .task_details textarea {
+ border : none;
+ padding : 10px;
+ margin : 3px 0 5px 0;
+ height : 75px;
+ width : 220px;
+ background : #E6E7E8;
+ color : #414042;
+ border-radius : 4px;
+ -moz-border-radius : 4px;
+ -webkit-border-radius : 4px;
+ resize : none; 
+}
+
+/* -- */
+
+.panel.tasks .save { 
+ width:66px;
+ margin: 7px 50px 0 0;
+}
+
+/* -- */
+
+.panel.tasks .deadline_selectors {
+ /* invisible by default */
+ display:none; 
+}
+
+/* -- */
+
+.panel.tasks .priority_selectors {
+ position : relative;
+ display : block; 
+ width : 240px; 
+ height : 190px;
+ float : left; /* very important for positioning*/
+ /*background : black;*/
+}
+
+.panel.tasks .priority_selectors ul {
+ list-style-type : none;
+ padding : 0px;
+ margin : 0 0 5px 0;
+ float : left;
+}
+
+.panel.tasks .priority_selectors ul li {
+ display : block;
+ height : 90px;
+ width : 115px;
+ float : left; 
+ background : #E6E7E8;
+ text-align : center;
+ color : #58595B;
+ cursor : pointer; 
+ /**/
+ -moz-border-radius : 5px;
+ -webkit-border-radius : 5px;
+ border-radius : 5px;
+ -khtml-border-radius : 5px;
+}
+.panel.tasks .priority_selectors ul li:hover {
+ background : #D1D3D4;
+}
+
+.panel.tasks .priority_selectors ul li .text {
+ margin : 4px 11px; 
+}
+
+/**/
+
+.panel.tasks .priority_selectors ul li.mid {
+ position : absolute; 
+ top : 55px;
+ left : 55px; 
+ border : 5px solid #F9F9F9;
+ height : 64px; 
+}
+.panel.tasks .priority_selectors ul li.mid .text {
+ margin-top : 20px;
+}
+
+.panel.tasks .priority_selectors ul li.left {
+ text-align : left;
+}
+
+.panel.tasks .priority_selectors ul li.right {
+ margin-left : 5px; 
+ text-align : right; 
+}
+
+.panel.tasks .priority_selectors ul li.bottom {
+ margin-top : 5px; 
+}
+.panel.tasks .priority_selectors ul li.bottom .text {
+ margin-top : 37px; 
+}
+
+/**/
+
+.panel.tasks .priority_selectors ul li.selected {
+ background : #1E72BB;
+ color : white; 
+}
+
+/* -- */
+
+.panel.tasks .sub_task_container,
+.panel.tasks .contact_container,
+.panel.tasks .note_container {
+ width : 200px; 
+ margin-left : 20px;
+ max-height : 80px; 
+ overflow : auto; 
+}
+
+/* -- PREVIEW PANEL >> CONTACTS -- */
+
+.panel.contacts {
+ /*override*/
+ width:930px;
+}
+
+.panel.contacts .header.main {
+ /* overrides */ 
+
+}
+
+/* the two main systems */
+.panel.contacts .display_system { } /*GGGG*/ 
+.panel.contacts .add_contact_system { display:none; }
+
+.panel.contacts .left_panel {
+ width : 290px;
+ height : 100%;
+ float : left;
+ clear : none;
+}
+
+.panel.contacts .mid_panel {
+ width : 310px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 20px;
+}
+
+.panel.contacts .right_panel {
+ width : 250px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 25px; 
+}
+
+/* --- */
+
+.panel.contacts input[type="text"] , 
+.panel.contacts input[type="password"] {
+ width : 210px;
+}
+
+/* --- */
+
+.panel.contacts .mid_panel h1 {
+ margin-left : 18px; 
+}
+
+.panel.contacts .mid_panel hr {
+ width : 220px; 
+}
+
+/**/
+
+.panel.contacts .contact_list_header .tab:last-child {
+ float : right; 
+}
+
+/**/
+
+.panel.contacts .contact_details {
+ width : 260px;
+ height : 400px; 
+ float : left; 
+ margin : 10px 0 0 18px;
+ overflow : auto; 
+}
+
+/**/
+
+.panel.contacts .received_request_details {
+ /* default state */
+ display : none; 
+ width : 260px;
+ height : 400px; 
+ float : left; 
+ margin : 10px 0 0 18px;
+ overflow : auto; 
+}
+
+.panel.contacts .sent_request_details {
+ /* default state */
+ display : none; 
+ width : 260px;
+ height : 400px; 
+ float : left; 
+ margin : 10px 0 0 18px;
+ overflow : auto; 
+}
+
+/**/
+
+.panel.contacts .request_options {
+ float : left; 
+ height : 140px;
+ display : block; 
+ width : 220px; 
+}
+
+.panel.contacts .request_options p {
+ float : left; 
+ margin : 5px 0 10px 0; 
+ padding : 8px 10px 10px 10px; 
+ font-size : 14px; 
+ font-weight : 600; 
+ color : white; 
+ background : orange;
+ text-align : center; 
+ /**/
+ border-radius : 6px;
+ -moz-border-radius : 6px;
+ -webkit-border-radius : 6px;
+}
+
+.panel.contacts .edit_button.yes {
+ margin : 0; 
+} 
+.panel.contacts .edit_button.no {
+ margin : 0 10px 0 0;
+}
+.panel.contacts .edit_button.cancel {
+ margin : 0;
+}
+
+/* --- */
+
+.panel.contacts .contact_list_header {
+ display : block;
+ height : 30px;
+ margin : 2px 0 0 34px;
+ width : 260px;
+ float:left; 
+}
+
+.panel.contacts .contact_list_header .tab {
+ margin-right : 33px;
+}
+
+.panel.contacts .contact_list, 
+.panel.contacts .request_list {
+ display : block;
+ height : 390px;
+ margin : 10px 0 0 36px;
+ overflow : auto;
+ width : 222px;
+ float : left; 
+ background : #F1F1F1; 
+}
+
+/* initial states */
+.panel.contacts .request_list {
+ display : none; 
+}
+
+.panel.contacts .request_list .load_overlay {
+ display : none; 
+}
+
+.panel.contacts .detail_panels .received_request_details .load_overlay {
+ display : none; 
+}
+
+/* -- PREVIEW PANEL >> NOTES -- */
+
+.panel.notes {
+ /*overrides */
+ width : 680px; 
+}
+
+.panel.notes .header.main {
+ /* overrides */ 
+
+}
+
+.panel.notes .left_panel {
+ width : 290px;
+ height : 500px;
+ float : left;
+ clear : none;
+ position : relative;
+}
+
+.panel.notes .right_panel {
+ clear : none;
+ float : left;
+ height : 560px;
+ margin-left : 37px;
+ width : 240px;
+}
+
+/* --- */
+
+.panel.notes .note_list_header {
+ display : block;
+ height : 30px;
+ margin : 2px 0 0 34px;
+ width : 260px;
+ float:left; 
+}
+
+.panel.notes .note_list_header .tab {
+ margin-right : 33px;
+}
+
+.panel.notes .note_list {
+ display : block;
+ height : 390px;
+ margin : 10px 0 0 36px;
+ overflow : auto;
+ width : 222px;
+ float : left; 
+ background : #F1F1F1; 
+}
+
+/* --- */
+
+.panel.notes .note_body {
+ width : 325px; 
+}
+
+.panel.notes .note_details textarea {
+ border : none;
+ padding : 10px;
+ margin : 3px 0 5px 0;
+ height : 330px;
+ width : 280px;
+ background : #E6E7E8;
+ color : #414042;
+ border-radius : 4px;
+ -moz-border-radius : 4px;
+ -webkit-border-radius : 4px;
+ resize : none; 
+}
+
+/* -- PREVIEW PANEL >> WHISPERS -- */
+
+.panel.whispers {
+ width : 870px;
+}
+
+.panel.whispers .header.main {
+
+}
+
+.panel.whispers .left_panel {
+ width : 290px;
+ height : 90%;
+ float : left;
+ clear : none;
+ position : relative;
+}
+
+.panel.whispers .right_panel {
+ clear : none;
+ float : left;
+ height : 100%;
+ margin-left : 36px;
+ position : relative;
+ width : 500px;
+}
+
+/* --- */
+
+.panel.whispers .white_space {
+ /* white space object at the bottom of each message window */
+ float : left; 
+ clear : none; 
+ height : 40px; 
+ width : 100%; 
+ /* take up the space , but don't waste resources rendering it */
+ visibility : hidden; 
+}
+
+/* --- */
+
+.panel.whispers .whisper_list_header {
+ display : block;
+ height : 30px;
+ margin : 2px 0 0 34px;
+ width : 260px;
+ float:left; 
+}
+
+.panel.whispers .whisper_list_header .tab {
+ margin-right : 33px;
+}
+
+.panel.whispers .conversation_list, 
+.panel.whispers .contact_list {
+ display : block;
+ height : 200px; /* CHANGE TO THIS AFTER TESTING - 390px; */
+ margin : 9px 0 0 36px;
+ overflow : auto;
+ width : 222px;
+ float : left; 
+ background : #F1F1F1; 
+}
+
+/* initial states */
+.panel.whispers .contact_list {
+ display : none; 
+}
+
+/* --------- */
+
+.panel.whispers .conversations_wrapper {
+ height : 330px;
+ width : 100%;
+ display : block;
+ position : relative;
+ /*background : #444;*/
+ overflow : auto;
+}
+
+.panel.whispers .conversations_wrapper .conversation {
+ height : 330px; 
+ width : 100%;
+ display : block;
+ margin : 0px auto;
+ position : relative;
+ /* only the selected conversation should be visible */
+ display : none; 
+}
+
+.panel.whispers .conversations_wrapper .conversation.selected {
+ /*background : #EAEAEA; /*green*/
+ display : block; 
+}
+
+.panel.whispers .conversations_wrapper .conversation > .header {
+ height : 40px;
+ display : block;
+ width : 100%;
+ text-align : left;
+ position : absolute; /* we want it to float above the messages */
+ background : #F9F9F9; 
+}
+
+.panel.whispers .conversations_wrapper .conversation > .header input {
+ float : right; 
+ clear : none; 
+}
+
+
+.panel.whispers .inform.no_whispers { 
+ display : none;
+ position : absolute;
+ top : 40px;
+ bottom : 90px;
+ left : 0;
+ right : 0; 
+ font-size : 14px;
+}
+
+
+/* ------------- */
+
+.panel.whispers .conversations_wrapper .conversation .message_container {
+ display : block;
+ float : left;
+ width : 500px;
+ overflow : auto;
+ position : absolute;
+ top : 40px;
+ bottom : 0;
+ background : #EAEAEA; 
+ /*background:black;*/
+ border-radius : 8px;
+ -moz-border-radius : 8px;
+ -webkit-border-radius : 8px;
+}
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message {
+ min-height : 60px;
+ width : 420px;
+ margin : 10px 10px 0 10px;
+ position : relative;
+ display : block;
+ clear : both;
+ float : left;
+ border : 1px solid gray;
+
+ -moz-box-shadow : inset 0 0 12px 1px #ccc;
+ -webkit-box-shadow : inset 0 0 12px 1px #ccc;
+ box-shadow : inset 0 0 12px 1px #ccc;
+ background : white;
+}
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message.received { 
+ float:left; 
+ -moz-border-radius : 10px 10px 10px 0;
+ -webkit-border-radius : 10px 10px 10px 0;
+ border-radius : 10px 10px 10px 0;
+ -khtml-border-radius : 10px 10px 10px 0;
+}
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message.sent { 
+ float:right; 
+ -moz-border-radius : 10px 10px 0 10px;
+ -webkit-border-radius : 10px 10px 0 10px;
+ border-radius : 10px 10px 0 10px;
+ -khtml-border-radius : 10px 10px 0 10px;
+}
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message .header {
+ float : left;
+ clear : none;
+ background : #AAA;
+ display : block;
+ height : 22px;
+ width : 420px;
+ color : white; 
+ /**/
+ -moz-border-radius : 10px 10px 0 0;
+ -webkit-border-radius : 10px 10px 0 0;
+ border-radius : 10px 10px 0 0; 
+ -khtml-border-radius : 10px 10px 0 0;
+}
+.panel.whispers .conversations_wrapper .conversation .whisper_message.sent .header {
+ background : #155B8A; 
+}
+.panel.whispers .conversations_wrapper .conversation .whisper_message.received .header {
+ background : #5C5E5F
+}
+
+/**/
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message .header .delete_button {
+ float : right;
+ height : 22px;
+ width : 22px;
+ background : url('../../../images/close_x_white.png'); /*#999;*/
+ margin-right : 8px; 
+ cursor : pointer;
+}
+
+/**/
+.panel.whispers .conversations_wrapper .conversation .whisper_message .header p {
+ font-size : 14px; 
+ margin : 0; 
+}
+
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message .header p span.name { 
+ text-align :left;
+ float :left;
+ width :210px;
+ margin-left : 10px; 
+ /*background:pink; */
+}
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message .header p span.date { 
+ text-align : right;
+ width : 145px;
+ float : right; 
+ margin-right : 10px; 
+ /*background:teal;*/
+}
+
+/**/
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message .content {
+ float : left;
+ clear : left;
+ display : block;
+ min-height : 32px;
+ width : auto;
+}
+
+.panel.whispers .conversations_wrapper .conversation .whisper_message .content p {
+ margin : 10px 10px 20px 10px;
+ color : #222; 
+ font-size : 14px; 
+}
+
+/* ------------------ */
+
+.panel.whispers .user_input {
+ height : 100px;
+ width : 100%; 
+ display : block;
+ position : relative; 
+ float : left; 
+ margin-top : 8px; 
+}
+
+.panel.whispers .user_input > * {
+ border :none;
+ border-radius : 8px;
+ -moz-border-radius : 8px;
+ -webkit-border-radius : 8px;
+}
+
+.panel.whispers .user_input .whisper_message_input {
+ padding : 10px;
+ margin : 0px 0 5px 0;
+ width : 375px;
+ height : 75px;
+ background : #E6E7E8;
+ color : #414042;
+ float : left; 
+ clear : none;
+ /**/
+ resize : none; 
+}
+
+.panel.whispers .user_input .send_whisper {
+ width : 95px;
+ height : 95px;
+ float : right; 
+ clear : none;
+ padding : 0;
+ background : #1E72BB;
+ color : white; 
+}
+
+/* -- PREVIEW PANEL >> SETTINGS -- */
+
+.panel.settings .header.main {
+ /*overrides*/
+}
+
+.panel.settings .left_panel {
+ width : 315px;
+ float : left;
+ clear : none;
+ height : 100%;
+ margin-left : 25px; 
+}
+
+.panel.settings .calendar_settings {
+ display : block;
+ height : 400px;
+ margin : 20px 0 0 10px;
+ overflow : auto;
+ width : 280px;
+ float : left; 
+ /*background : pink;*/ 
+}
+
+.panel.settings h3 {
+ clear : none;
+ float : left;
+ height : 25px;
+ margin : 2px 0 0;
+ width : 145px;
+}
+
+.panel.settings .time_input {
+ width : 80px;
+ float : right; 
+ margin : -27px 24px 0 0; 
+ clear : both; 
+}
+
+.panel.settings .time_input input[type="text"] {
+ width : 64px;
+ float : right; 
+}
+
+.panel input[type="text"], .panel input[type="password"] {
+ background : none repeat scroll 0 0 #E6E7E8;
+ border : medium none;
+ border-radius : 4px 4px 4px 4px;
+ color : #414042;
+ height : 22px;
+ margin : 0px 0 5px;
+ padding-left : 10px;
+ width : 230px;
+}
+
+/* -- DIALOG WINDOW >> OVERRIDES -- */
+
+.dialog_window {
+ position :relative; /* body becomes a reference point */
+ font-family : 'Open Sans', sans-serif;
+ font-weight : 400;
+ font-size : 14px; 
+}
+
+/**/
+
+.dialog_window .load_overlay {
+ display : none; 
+}
+
+/* -- */
+
+.dialog_window input.fancy {
+
+ color : #868686;
+ font-size : 15.25px; 
+ margin : 3px 0 10px 0; 
+ width : 400px; 
+
+ /* Drop Shadow nonsense */
+ -moz-box-shadow : 0px 0px 2px #444;
+ -webkit-box-shadow : 0px 0px 2px #444;
+ box-shadow : 0px 0px 2px #444;
+
+ border-radius : 4px;
+ -moz-border-radius : 4px;
+ -webkit-border-radius : 4px;
+
+}
+
+.dialog_window input.fancy.centered {
+ margin : auto; 
+ display : block; 
+ text-align : center; 
+}
+
+.dialog_window p.centered {
+ text-align : center; 
+}
+
+/* -- */
+
+.dialog_window .note_list, 
+.dialog_window .task_list, 
+.dialog_window .contact_list 
+{
+ width : 45%;
+ float : left;
+}
+
+.dialog_window .selected_note_list, 
+.dialog_window .selected_task_list, 
+.dialog_window .selected_contact_list 
+{
+ width : 45%;
+ float : left;
+ clear : none;
+ margin-left : 10%;
+}
+
