@@ -1,0 +1,161 @@
+// This file overrides the bootswatch stuff
+
+.navbar-brand
+
+    font-family: 'Roboto Slab' , 'Helvetica Neue' , sans-serif
+    letter-spacing: 0.2em
+    text-transform: uppercase
+    color: $white
+
+.navbar-inverse 
+
+    .navbar-collapse
+        border-color: $off_black
+
+    .navbar-toggle
+        border-color: $dark_red
+
+        &:active,
+        &:hover,
+        &:focus
+            background-color: $dark_red
+
+.navbar
+
+    @include border-radius(0)
+    background: none
+    margin-bottom: 0
+
+    .navbar-header
+        background-color: $red
+        border-bottom: 2px solid $dark_red
+
+    li
+        &:hover 
+            background-color: #000
+
+    @media screen and (min-width: 768px)
+
+        .navbar-header,
+        .navbar-brand
+
+            text-align: center
+            width: 100%
+            background: $red
+
+
+@media screen and (max-width: 768px)
+
+    .navbar-collapse
+        background-color: $off_black
+        padding-bottom: 1em
+
+
+// holy balls coloring
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a
+    
+    color: $brown
+
+.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:focus
+
+    color: $white
+
+// Primary Button Colors
+
+.btn-primary
+
+    background-color: $red
+    border-color: $dark_red
+    color: $white
+
+    &:hover, 
+    &:focus, 
+    &:active, 
+    &.active, 
+    .open>.dropdown-toggle.btn-primary
+        background-color: $dark_red
+        border-color: $dark_red
+
+// Dropdown Menus
+
+.btn-group.open .dropdown-toggle
+    background-color: $dark_red
+    border-color: $red
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+    background-color: $red
+
+// Inputs
+
+input.form-control:hover,
+input.form-control:focus,
+input.form-control:active
+    border-color: $red
+
+// Form groups with no padding - just a single element inside a well
+.form-group
+
+    &.single
+        margin-bottom: 0
+
+    &.airy
+        margin-bottom: 36px
+
+.well
+    background-color: $off_white
+    @include border-radius(0)
+    margin-bottom: 24px !important
+
+//
+// -----------------------------------------
+
+// Remaining Template Shit
+
+@media(min-width:768px) 
+    #wrapper 
+        padding-left: 225px
+    
+// Top Navigation
+
+.top-nav 
+    padding: 0 15px
+
+.top-nav>li 
+    display: inline-block
+    float: left
+
+.top-nav>li>a 
+    padding-top: 15px
+    padding-bottom: 15px
+    line-height: 20px
+
+// Side Navigation
+
+@media(min-width:768px) 
+    .side-nav 
+        position: fixed
+        left: 225px
+        width: 225px
+        margin-left: -225px
+        border: none
+        border-radius: 0
+        overflow-y: auto
+        min-height: 50px
+    
+    .side-nav>li>a 
+        width: 225px
+    
+.side-nav>li>ul 
+    padding: 0
+
+.side-nav>li>ul>li>a 
+    display: block
+    padding: 10px 15px 10px 38px
+    text-decoration: none
+
+.huge 
+    font-size: 64px
+
